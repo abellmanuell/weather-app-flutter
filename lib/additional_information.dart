@@ -14,18 +14,17 @@ class AdditionalInformation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
-      padding: const EdgeInsets.all(12),
-      child: Column(
-        children: [
-          Icon(icon, size: 30),
-          const SizedBox(height: 16),
-          Text(label),
-          const SizedBox(height: 16),
-          Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
-        ],
-      ),
+    return Column(
+      children: [
+        Icon(icon, size: 32),
+        const SizedBox(height: 8),
+        Text(label),
+        const SizedBox(height: 8),
+        Text(
+          value,
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+        ),
+      ],
     );
   }
 }
